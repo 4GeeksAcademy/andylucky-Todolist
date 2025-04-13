@@ -28,7 +28,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.laX{
+.LaX{
     position: absolute;
     top: 5px;
     right: 3px;
@@ -38,9 +38,11 @@ input[type="text"] {
     text-align: center;
     z-index: 100;
     cursor: pointer;
+    visibility: hidden;
 }
-.laX :hover{
-    cursor: pointer;
+.LaX.over{
+    cursor: pointer; 
+    visibility: visible;
 }
 .cutomList{
     width: 600px;
@@ -49,4 +51,11 @@ input[type="text"] {
     margin-bottom: 1px;
     box-shadow: -4px -5px 20px 0px #b9b9b9;
     flex-direction: column;
+}
+
+.restoTareas{
+    margin-top: 9px;
+    margin-left: 6px;
+    font-size: 14px;
+    color: grey;
 }
